@@ -1,0 +1,23 @@
+CREATE TABLE employee(
+  id SERİAL PRIMARY KEY,
+  name VARCHAR(50),
+  birthday DATE,
+  email VARCHAR(100)
+);
+
+
+update employee
+set name = 'Ahmet',
+    birthday = '2002-11-07',
+    email = 'ahmet34@gmail.com'
+where id = 3
+
+update employee
+set name = 'Buse',
+    birthday = '2002-06-15',
+    email = 'crowgirl@gmail.com'
+where id = 4
+
+
+delete from employee
+where id in(50,45,30,35,25)
